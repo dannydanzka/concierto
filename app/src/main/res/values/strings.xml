@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Gestión de Conciertos</string>
+    <string name="nombre_concierto">Nombre del Concierto</string>
+    <string name="ingrese_nombre">Ingrese el nombre del concierto</string>
+    <string name="fecha_concierto">Fecha del Concierto</string>
+    <string name="ingrese_fecha">Ingrese la fecha del concierto</string>
+    <string name="registrar">Registrar</string>
+    <string name="buscar">Buscar</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="detalles_concierto">Detalles del Concierto</string>
+    <string name="regresar">Regresar</string>
+</resources>
