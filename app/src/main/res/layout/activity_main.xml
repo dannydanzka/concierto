@@ -3,18 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
     <!-- Nombre del Concierto -->
     <EditText
         android:id="@+id/input_nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ingrese el nombre del concierto"
+        android:hint="@string/ingrese_nombre"
         android:inputType="text"
-        android:enabled="true"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
         android:textSize="18sp"/>
 
     <!-- Fecha del Concierto -->
@@ -22,9 +20,28 @@
         android:id="@+id/input_fecha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ingrese la fecha del concierto"
+        android:hint="@string/ingrese_fecha"
         android:inputType="date"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"/>
+
+    <!-- Lugar del Concierto -->
+    <EditText
+        android:id="@+id/input_lugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingrese_lugar"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"/>
+
+    <!-- Precio del Concierto -->
+    <EditText
+        android:id="@+id/input_precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingrese_precio"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="12dp"
         android:textSize="18sp"/>
 
     <!-- Selección de Género -->
@@ -32,39 +49,47 @@
         android:id="@+id/spinner_genero"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="12dp"/>
 
     <!-- Botones -->
     <Button
         android:id="@+id/btn_registrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar"
+        android:text="@string/registrar"
         android:layout_marginTop="24dp"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/btn_buscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Buscar"
+        android:text="@string/buscar"
         android:layout_marginTop="8dp"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/btn_limpiar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Limpiar"
+        android:text="@string/limpiar"
         android:layout_marginTop="8dp"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:background="@color/teal_200"
+        android:textColor="@color/black"/>
 
     <Button
         android:id="@+id/btn_eliminar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Eliminar"
+        android:text="@string/eliminar"
         android:layout_marginTop="8dp"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"/>
 
 </LinearLayout>

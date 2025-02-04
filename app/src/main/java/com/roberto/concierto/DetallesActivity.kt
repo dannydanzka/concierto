@@ -12,14 +12,21 @@ class DetallesActivity : AppCompatActivity() {
 
         val nombre = intent.getStringExtra("nombre")
         val fecha = intent.getStringExtra("fecha")
+        val lugar = intent.getStringExtra("lugar")
         val genero = intent.getStringExtra("genero")
+        val precio = intent.getStringExtra("precio")
 
         val detallesTextView = findViewById<TextView>(R.id.detalles_text)
-        detallesTextView.text = "Nombre: $nombre\nFecha: $fecha\nGénero: $genero"
+        detallesTextView.text = """
+            Nombre: $nombre
+            Fecha: $fecha
+            Lugar: $lugar
+            Género: $genero
+            Precio: $$precio
+        """.trimIndent()
 
-        val btnRegresar = findViewById<Button>(R.id.btn_regresar)
-        btnRegresar.setOnClickListener {
-            finish() // Cierra esta actividad y regresa a la anterior
+        findViewById<Button>(R.id.btn_regresar).setOnClickListener {
+            finish()
         }
     }
 }

@@ -1,13 +1,25 @@
 <resources>
     <string name="app_name">Gestión de Conciertos</string>
+
+    <!-- Campos de Entrada -->
     <string name="nombre_concierto">Nombre del Concierto</string>
     <string name="ingrese_nombre">Ingrese el nombre del concierto</string>
     <string name="fecha_concierto">Fecha del Concierto</string>
     <string name="ingrese_fecha">Ingrese la fecha del concierto</string>
+    <string name="lugar_concierto">Lugar del Concierto</string>
+    <string name="ingrese_lugar">Ingrese el lugar del concierto</string>
+    <string name="precio_concierto">Precio del Concierto</string>
+    <string name="ingrese_precio">Ingrese el precio del concierto</string>
+    <string name="genero_concierto">Género del Concierto</string>
+    <string name="seleccione_genero">Seleccione el género del concierto</string>
+
+    <!-- Botones -->
     <string name="registrar">Registrar</string>
     <string name="buscar">Buscar</string>
     <string name="limpiar">Limpiar</string>
     <string name="eliminar">Eliminar</string>
+
+    <!-- Detalles -->
     <string name="detalles_concierto">Detalles del Concierto</string>
     <string name="regresar">Regresar</string>
 </resources>
